@@ -3,6 +3,7 @@ body {
     font-size: 18px;
     line-height: 34px;
     color: #777777;
+    background: url(assets/Unit_1_Intro_to_Web_Development_HTML_CSS_Git_Homework_portfolio-homework-solution_assets_images_concrete_seamless\ \(1\).png);
   }
   
   * {
@@ -214,7 +215,7 @@ body {
     background: #4aaaa5;
     border: 0 none;
   }
-/* INDEX queries only*/
+/* INDEX queries only for 640*/
   @media screen and (min-width: 0px) and (max-width: 640px) {
     #logo{
       width: 100%;
@@ -222,25 +223,79 @@ body {
     nav {
       float: none;
       margin: 0 auto;
+      text-align: center;
     }
     .auth-image
      {
       width: 100%;
     }
-    /* PORTFOLIO queries only..*/
+    #contact-form {
+      margin-bottom: 600px;
+    }
+    .main-section{
+      margin-bottom: 600px;
+    }
+    /* PORTFOLIO queries only for 640*/
+    .portfolio-main {
+      margin-bottom: 0px;
+    }
+  .work {
+    width: 100%;
+  }
+  .no-display {
+    display: none;
+  }
+  /*contact queries only for 640*/
+#contact-form{
+  margin-bottom: 10px;
+}
+.contact-only {
+  margin-bottom: 300px;
+}
 }
   
   @media screen and (min-width: 640px) and (max-width: 768px) {
-    p {
-      color: blue;
-    }
+    /* INDEX queries only for 768s*/
 #main-container {
-  margin-bottom: 500px;
+  margin-bottom: 600px;
 }
+.auth-image {
+  width: 100px;
+  height: auto;
+}
+/* PORTFOLIO queries only for 768*/
+.work {
+  width: 35%;
+  margin-right: 20px;
+}
+.portfolio-main {
+  width: auto;
+}
+/*contact queries only for 768- didnt see any changes needed??*/
+
   }
   @media screen and (min-width: 769px) and (max-width: 980px) {
-    p {
-      color: blue;
+    #main-container {
+      padding-bottom: 300px;
+      padding-right: 300px;
     }
-
+    /* PORTFOLIO queries only for 980*/
+.portfolio-main {
+  width: auto;
+}
+.work {
+  width: 35%;
+  margin-right: 20px;
+}
+h3 {
+  width: 20%;
+  height: 20%;
+ padding-bottom: 20px;
+}
+/*contact queries only for 980*/
+.contact-only {
+  margin-bottom: 300px;
+  margin-right: 200px;
+  color: gray;
+}
   }
